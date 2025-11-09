@@ -1,0 +1,134 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e ;
+}
+
+h1{
+    color:white
+}
+
+/* Dino */
+#score{
+    text-align: center;
+}
+#game {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url(Pictures/DinoGameBG.png);
+    background-size: cover;
+}
+#dino{
+    height:75px;
+    width:75px;
+
+    position:relative;
+    top:225px;
+    background-image: url(Pictures/dino.png);
+    background-size: cover;
+
+}
+#rock{
+    height:50px;
+    width:50px;
+    left: 550px;
+    position:relative;
+    top:175px;
+    background-image: url(Pictures/Rock.jpg);
+    background-size: cover;
+    animation: rock 1.33s infinite;
+}
+
+
+@keyframes rock{
+    0%{left: 550px;}
+    100%{left:-75px}
+}
+.jump-animation{
+    animation: jump 0.5s;
+}
+
+@keyframes jump{
+    0%{top:225px;}
+    50%{top:75px;}
+    75%{top:75px;}
+
+    100%{top:225px;}
+}
+
+/* Connect 4 */
+
+
+#board{
+    height: 540px;
+    width: 630px;
+
+    background-color: blue;
+    border: 10px solid navy;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    height:70px;
+    width:70px;
+
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    border: 5px solid navy;
+}
+.red-piece {
+    background-color: red;
+}
+.yellow-piece{
+    background-color: yellow;
+}
+
+/* TicTacToe */
+
+hr{
+    height:5px;
+    width: 500px;
+    background-color: black;
+}
+
+#Tboard{
+    width: 450px;
+    height: 450px;
+
+    background-color: rgb(206, 130, 0);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Ttile{
+    width: 147px;
+    height: 147px;
+
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horizontal-line {
+    border-bottom: 3px solid black;
+}
+
+.vertical-line{
+    border-right: 3px solid black;
+}
+
+.winner{
+    background-color: lightgrey;
+    color:red;
+}
+
+/* space Invaders */
+.board{
+    background-color: black;
+}

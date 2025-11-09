@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Has9's Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Has9's Games</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li><a href="order.html">Order Now</a></li>  Reminiscence of something old-->
+        <li><a href="games.html">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>A tiny Gaming spot!</h1>
+      <p>Some Whacky games I made while learning Java.</p>
+      <button>(can't) Read More</button>
+    </div>
+  </section>
+
+  <section class="why-us" id="story">
+    <h2>Why Games?</h2>
+    <div class="why-content">
+      <div class="text">
+        <p>I like Games, so that's what I am offering. If you want to play then you are most welcome</p>
+        <button>Visit Us Today (don't)</button>
+      </div>
+      <div class="image">
+        <img src="Picture/ME.png" alt="My Vrchat Avatar">
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2>Featured games</h2>
+    <div class="menu-cards">
+      <a href="Games/dinoGame.html" id="cardsLink">
+        <div class="card">
+        <img src="Games/Pictures/Banner_Dino.png" alt="Dino">
+        <h3>Dino</h3>
+        <p>Dodge rocks by jumping. Basic but Fun (not this one tho cuz its kind of incomplete).</p>
+      </div>
+      </a>
+      <a href="Games/connect4.html" id="cardsLink">
+      <div class="card">
+        <img src="Games/Pictures/Banner_Connect4.png" alt="Connect4">
+        <h3>Connect4</h3>
+        <p>Connect 4 pieces in line to win, you can place horizontally, vertically and even diagonally!</p>
+      </div>
+      </a>
+      <a href="Games/SpaceInvaders.html" id="cardsLink">
+      <div class="card">
+        <img src="Games/Pictures/Banner_Space-Invaders.png" alt="Space Invaders">
+        <h3>Space Invaders</h3>
+        <p>The Classic Retro Game. Shoot aliens and don't let them reach you!</p>
+      </div>
+      </a>
+      <a href="Games/tictactoe.html" id="cardsLink">
+      <div class="card">
+        <img src="Games/Pictures/Banner_TicTacToe.png" alt="Tic Tac Toe">
+        <h3>Tic Tac Toe</h3>
+        <p>Timeless game. Used to play it a lot when was a child. thought why not I make one?</p>
+      </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <p class="contact-subtext">
+    Have a question or Suggestion? I’d love to hear from you!
+  </p>
+
+  <div class="contact-container">
+    <form class="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="4" placeholder="Type your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="order-btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Visit Us</h3>
+      <p>Discord Goblin, Sukkur, Pakistan</p>
+      <p><strong>Phone:</strong> +92 something something</p>
+      <p><strong>Email:</strong> hello@Has9.com</p>
+    </div>
+  </div>
+</section>
+
+  <section class="happy-hours">
+    <h2>We offer tea as well</h2>
+    <p>Perfect time to start your day right!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Has9's Games. All rights reserved for <span id="name"> M.Umar Hasnain.</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
